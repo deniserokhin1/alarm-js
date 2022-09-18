@@ -68,8 +68,8 @@ module.exports = {
           to: path.resolve(__dirname, 'dist'),
         },
         {
-          from: path.resolve(__dirname, 'src/ringtone2.mp3'),
-          to: path.resolve(__dirname, 'dist'),
+          from: path.resolve(__dirname, 'src/files/ringtone2.mp3'),
+          to: path.resolve(__dirname, 'dist/files'),
         },
       ],
     }),

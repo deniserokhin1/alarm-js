@@ -1,6 +1,7 @@
 import './style/normolize.css';
 import './style/style.css';
 import './style/style.scss';
+import './style/media.css';
 import { templateEngine } from './lib/templating-engine';
 import { hourItemTamplate } from './lib/hourItemTamplate';
 
@@ -18,7 +19,7 @@ const valueAlarm = document.querySelectorAll('.set-time__value');
 const bottom = document.querySelector('.bottom');
 
 let toggleAlarm = true;
-let ringtone = new Audio('./ringtone2.mp3');
+let ringtone = new Audio('./files/ringtone2.mp3');
 
 setInterval(() => {
   let data = new Date();
@@ -58,7 +59,7 @@ body.addEventListener('mousedown', (e) => {
 
   if (
     !targetElement.closest('.set-time') ||
-    !targetElement.classList.contains('.set-time')
+    targetElement.classList.contains('set-time')
   ) {
     hideMenu();
     return;

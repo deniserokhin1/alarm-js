@@ -10,30 +10,30 @@ body {
 .container {
   margin: 50px auto;
   padding: 50px;
-  max-width: 450px;
+  max-width: 410px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 18px;
   background: #fff;
 }
 
 .container__btn {
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 15px 0;
   border: none;
   border-radius: 8px;
   background: #4a98f7;
   color: #fff;
   font-size: 30px;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   -webkit-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
 }
 
 .container__btn:hover {
@@ -42,7 +42,7 @@ body {
 
 .container__btn:active {
   -webkit-transform: scale(0.98);
-  transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .top {
@@ -51,14 +51,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .top__pic {
@@ -76,7 +76,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
+}
+
+.bottom_opacity {
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 .set-time {
@@ -87,11 +92,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 0;
   border: 1px solid grey;
   border-radius: 8px;
@@ -121,8 +126,8 @@ body {
   text-align: center;
   top: 70px;
   overflow-y: scroll;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   max-height: 0;
   opacity: 0;
 }
@@ -140,6 +145,7 @@ body {
 .menu__item {
   list-style: none;
   font-size: 38px;
+  cursor: pointer;
 }
 
 .menu__item:hover {

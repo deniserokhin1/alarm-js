@@ -1,5 +1,6 @@
 node_modules
 dist
 src/style/style.css
+src/style/media.css
 src/style/font-awesome
 .husky
