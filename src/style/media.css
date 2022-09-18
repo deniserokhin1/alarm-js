@@ -1,9 +1,6 @@
-@media (max-width: 540px) {
-  .set-time__value {
-    font-size: 25px;
-  }
-  .container__btn {
-    font-size: 20px;
+@media (max-width: 1023px) {
+  .menu_active {
+    max-height: 130px;
   }
 }
 
@@ -41,9 +38,6 @@
   }
   .menu {
     top: 45px;
-  }
-  .menu_active {
-    max-height: 130px;
   }
   .container__btn {
     margin-top: 25px;
