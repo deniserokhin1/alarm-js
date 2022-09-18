@@ -31,7 +31,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|mp3)$/i,
         type: 'asset/resource',
       },
       {
@@ -54,6 +54,21 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'src/style/favicon.ico'),
+          to: path.resolve(__dirname, 'dist'),
+        },
+        {
+          from: path.resolve(
+            __dirname,
+            'src/style/alarm-clock-clock-svgrepo-com.svg'
+          ),
+          to: path.resolve(__dirname, 'dist'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/style/down-arrow-svgrepo-com.svg'),
+          to: path.resolve(__dirname, 'dist'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/ringtone2.mp3'),
           to: path.resolve(__dirname, 'dist'),
         },
       ],

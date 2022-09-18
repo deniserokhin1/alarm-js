@@ -2,15 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <title>Будильник</title>
 </head>
 
 <body>
-<h1 class="title">Weather App</h1>
+    <div class="wrapper">
+        <div class="container">
+            <div class="top">
+                <img src="./alarm-clock-clock-svgrepo-com.svg" alt="alarm" class="top__pic">
+                <h1 class="top__title">00:00:00</h1>
+            </div>
+            <div class="bottom">
+                <div class="set-time">
+                    <input type="radio" id="hour" class="set-time__radio" name="radio">
+                    <label for="hour" class="set-time__value">Часы</label>
+                    <div class="menu">
+                        <ul class="menu__list">
+                        </ul>
+                    </div>
+                </div>
+                <div class="set-time">
+                    <input type="radio" id="minute" class="set-time__radio" name="radio">
+                    <label for="minute" class="set-time__value">Минуты</label>
+                    <div class="menu">
+                        <ul class="menu__list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="container__btn">ЗАВЕСТИ БУДИЛЬНИК</button>
+        </div>
+    </div>
 </body>
 
 </html>
